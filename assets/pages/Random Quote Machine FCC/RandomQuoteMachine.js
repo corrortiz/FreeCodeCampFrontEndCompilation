@@ -1,28 +1,29 @@
-var settings = {
-    "async": true,
-    "crossDomain": true,
-    "url": "http://quotesondesign.com/wp-json/posts? filter[orderby]=rand&filter[posts_per_page]=1&callback=?",
-    "method": "GET",
-    "headers": {
-        'Content-Type' : 'application/x-www-form-urlencoded; charset=UTF-8'
-    }
-};
+function getQuote() {
+    $.ajax({
+        headers: {
+            "X-Mashape-Key": "OivH71yd3tmshl9YKzFH7BTzBVRQp1RaKLajsnafgL2aPsfP9V",
+            Accept: "application/json",
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
+        success: function(response) {
+            var r = JSON.parse(response);
+            quoteX = r.quote;
+            autorX = r.author;
+            $('#add').append('<h1>' + quoteX + '</h1>');
+            $('#cuota').text(autorX);
+        }
+    });
+}
 
-var quote;
+var quoteX;
+var autorX;
 
 $(document).ready(function() {
-    $.ajax(settings).done(function (response) {
-        quote = response[0].content;
-        $('#add').append(response[0].content);
-        $('#cuota').text(response[0].title);
-    });
+    getQuote();
 
     $('#getcuota').click(function() {
-        $.ajax(settings).done(function (response) {
-            quote = response[0].content;
-            $('#add').append(response[0].content);
-            $('#cuota').text(response[0].title);
-        });
+        getQuote();
     });
 
     $('#bttTiwtter').click(function() {
@@ -30,7 +31,7 @@ $(document).ready(function() {
     });
 
     function tweetQuote() {
-        window.open("https://twitter.com/intent/tweet?&original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text=" + quote);
+        window.open("https://twitter.com/intent/tweet?&original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text="+quoteX+' from '+autorX+' #FCCRules');
     }
 });
 
