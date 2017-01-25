@@ -10,7 +10,7 @@ function getQuote() {
             var r = JSON.parse(response);
             quoteX = r.quote;
             autorX = r.author;
-            $('#add').append('<h1>' + quoteX + '</h1>');
+            $('#add').html('<h5><blockquote><q>' + quoteX + '</q></blockquote></h5>');
             $('#cuota').text(autorX);
         }
     });
