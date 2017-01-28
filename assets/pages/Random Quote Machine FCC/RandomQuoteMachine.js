@@ -31,7 +31,7 @@ $(document).ready(function() {
     });
 
     function tweetQuote() {
-        window.open("https://twitter.com/intent/tweet?&original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text="+quoteX+' from '+autorX+' #FCCRules');
+        window.open("https://twitter.com/intent/tweet?&original_referer=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&ref_src=twsrc%5Etfw&related=twitterapi%2Ctwitter&text=" + quoteX + ' from ' + autorX + ' #FCCRules');
     }
 });
 
