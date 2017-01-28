@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="SimonGameFCC.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Simon Game FCC</title>
+    <link rel="icon" href="../../icons/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12 m12 l12">
+            <h1 class="center-align">Simon Game FCC</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s6 m6 l6">
+                <h3 class="center-align">Count</h3>
+                <div class="card-panel red darken-4 center-align flow-text" id="cardParent">
+                    <span class="white-text flow-text" id="count">00 </span>
+                </div>
+            </div>
+            <div class="col s6 m6 l6 center-align">
+                <h3 class="center-align">Controls</h3>
+                <div class="switch center-align margenes red-text" id="suiwcht">
+                    <label>
+                        Off
+                        <input type="checkbox" id="imputChechBox">
+                        <span class="lever z-depth-2 hoverable"></span>
+                        On
+                    </label>
+                </div>
+                <a class="red darken-4 margenes waves-effect waves-light btn flow-text hoverable ableDis" id="star">Star</a>
+                <p><input type="checkbox" id="strict" class="colorCheckBox filled-in" /><label for="strict">Strict</label></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s16 m6 l6 container">
+                <div class="padreFlex ">
+                    <a class="adentroFlex green darken-4 flow-text center-align hoverable waves-effect waves-green btn ableDis" id="0">Green</a>
+                </div>
+            </div>
+            <div class="col s16 m6 l6 container">
+                <div class="padreFlex ">
+                    <a class="btn adentroFlex  orange darken-4 center-align waves-effect waves-orange flow-text hoverable ableDis" id="1">Orange</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s16 m6 l6 container">
+                <div class="padreFlex">
+                    <a class="btn adentroFlex red darken-4 center-align waves-red waves-effect flow-text hoverable ableDis" id="2">Red</a>
+                </div>
+            </div>
+            <div class="col s16 m6 l6 container">
+                <div class="padreFlex">
+                    <a class="btn adentroFlex blue darken-4 center-align waves-effect waves-blue flow-text ableDis" id="3">Blue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer red darken-4">
+    <div class="footer-copyright">
+        <div class="col s12 left-align m12 l12">
+            <h5 class="center-align">by AO HyS</h5>
+        </div>
+    </div>
+</footer>
+<audio id="simonSound1" preload="auto">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+</audio>
+<audio id="simonSound2" preload="auto">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+</audio>
+<audio id="simonSound3" preload="auto">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+</audio>
+<audio id="simonSound4" preload="auto">
+    <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+</audio>
+<!-- Modal Trigger -->
+<a class="waves-effect waves-light btn hide" href="#moda" id="laminerva">Modal</a>
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="row center-align">
+            <div class="col s112 m12 l12 center-align">
+                <img class="materialboxed responsive-img center-align" src="http://i.giphy.com/FSLU2ToFliKd2.gif">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Import Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="http://underscorejs.org/underscore-min.js"></script>
+<script src="SimonGameFCC.js"></script>
+
+</body>
+</html>

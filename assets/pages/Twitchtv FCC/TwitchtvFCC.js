@@ -45,7 +45,7 @@ function programasOffLine(channel) {
         '<div class="card blue-grey darken-1 margenes" data-pg-collapsed>'+
         '<div class="card-content white-text pink">'+
         '<a class="card-title white-text waves-effect waves-block waves-light" href="https://www.twitch.tv/'+channel[0]+'">'+channel[1]+'</a>'+
-        '<img src="'+channel[2]+'" class="responsive-img circle" width="50" height="50">'+
+        '<img src="'+channel[2]+'" class="respo nsive-img circle" width="50" height="50">'+
         '</div>'+
         '</div>'+
         '</li>'
