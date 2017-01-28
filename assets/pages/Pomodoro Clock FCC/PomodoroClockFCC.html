@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="PomodoroClockFCC.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pomodoro Clock FCC</title>
+    <link rel="icon" href="../../icons/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+<main>
+    <div class="container">
+        <div class="row">
+            <h1 class="center-align flow-text">Pomodoro Clock FCC</h1>
+        </div>
+        <div class="row">
+            <div class="col s6 m6 l6">
+                <h4 class="center-align flow-text"><i class="material-icons large orange-text">restore</i><p class="MsoNormal"><span lang="EN-US">Session Length<o:p></o:p></span></p></h4>
+                <h6 class="center-align flow-text" id="length">25</h6>
+                <p class="range-field" id="scrollLength"> <input type="range" id="test1" min="1" max="60" value="25" /> </p>
+            </div>
+            <div class="col s16 m6 l6">
+                <h4 class="center-align flow-text"><i class="large material-icons cyan-text">watch_later</i><p class="MsoNormal"><span lang="EN-US"><p class="MsoNormal">Break Length<span lang="EN-US"><o:p></o:p></span></p></span></p></h4>
+                <h6 class="center-align flow-text" id="break">5</h6>
+                <p class="range-field" id="scrollBreak"> <input type="range" id="test2" min="1" max="20" value="5" /> </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card  brown lighten-1" id="cardShake">
+                <div class="card-content white-text">
+                    <div class="row">
+                        <div class="col s6 m6 l6 right-align">
+                            <h1 class="card-title flow-text" id="time">25</h1>
+                        </div>
+                        <div class="col s16 m6 l6 left-align">
+                            <h1 class="card-title flow-text" id="secons">00</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-action">
+                    <div class="row center-align">
+                        <a class="waves-light btn-large waves-effect cyan accent-3 z-depth-5 flow-text" id="session">Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="page-footer pink darken-4">
+    <div class="footer-copyright">
+        <div class="col s12 left-align m12 l12">
+            <h5 class="center-align">by AO HyS</h5>
+        </div>
+    </div>
+</footer>
+
+<!--Import Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="http://underscorejs.org/underscore-min.js"></script>
+<script src="PomodoroClockFCC.js"></script>
+
+</body>
+</html>
