@@ -1,0 +1,23 @@
+.cuadroPading
+{
+    margin-right: 80px;
+    margin-left: 80px;
+    padding: 80px;
+}
+
+.margenesBottones
+{
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
