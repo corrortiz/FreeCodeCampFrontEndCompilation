@@ -59,6 +59,7 @@ $(document).ready(function() {
 
     function myFuct(id) {
         $('#' + id).click();
+
         if (player >= gameTurns.length) {
             clearInterval(time);
             playerTurnIs = true;
