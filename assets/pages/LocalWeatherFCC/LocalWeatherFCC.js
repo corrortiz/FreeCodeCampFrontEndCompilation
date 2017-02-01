@@ -69,6 +69,7 @@ function getWhere() {
 function temperature(typografy, type) {
     $.getJSON(apiClima+city+typografy+appid).then(function(clima){
         $("#wether").html(clima.main.temp +' °'+type);
+
         icono(clima);
     });
 }
